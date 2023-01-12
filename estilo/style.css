@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+@font-face{
+    font-family: 'longhaul';
+    src: url(fonts/Longhaul.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+   
+}
+
+header{
+    width: 35%;
+    background-color: #CE7ED9;
+    padding: 20px 0 0 0 ;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #8CE994;
+}
+
+header > h1{
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-family: 'longhaul', Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+header > nav{
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttons-menu{
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.buttons-menu:hover{
+    text-decoration: underline;
+    color: #8CE994;
+    transition: 2s;
+}
+
+.img-menu > img{
+    border-radius: 50%;
+    max-height: 250px;
+    max-width: 150px;
+    margin:20px 20px ;
+}
+
+.img-menu{
+    text-decoration: none;
+    
+    
+}
+.img-menu > p{
+    margin: -20px 0 0 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.frank:hover    {
+    -moz-opacity: 0.5;
+	opacity: 0.5 ;-moz-opacity: 0.5;
+	transition: 1s;
+}
+
+main{
+   width: 65%;
+   margin-left: 35%;
+   background-color: #8CE994;
+   height: 655px;
+}
