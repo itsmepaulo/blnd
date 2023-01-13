@@ -1,16 +1,23 @@
 *{
     margin: 0;
 }
-
+@font-face{
+    font-family: 'longhaul';
+    src: url(fonts/Longhaul.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-   background-color: #f2c1f8;
+   
 }
 
 header{
-    max-width: 35%;
+    max-width: 100%;
+    width: 35%;
     background-color: #CE7ED9;
+    padding: 20px 0 0 0 ;
     height: 100%;
     position: absolute;
     left: 0;
@@ -19,6 +26,7 @@ header{
 }
 
 header > h1{
+    width: 100%;
     text-align: center;
     margin: 0 0 30px 0;
     font-family: 'longhaul', Arial, Helvetica, sans-serif;
@@ -28,6 +36,7 @@ header > h1{
 header > nav{
     font-weight: bold;
     text-align: center;
+    width: 100%;
 }
 
 .buttons-menu{
@@ -68,8 +77,8 @@ header > nav{
 }
 
 main{
-   max-width: 65%;
+   width: 65%;
    margin-left: 35%;
-   
-   
+   background-color: #8CE994;
+   height: 655px;
 }
