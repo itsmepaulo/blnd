@@ -13,10 +13,13 @@ body{
     background-color: #8CE994;
 }
 
-
+header{
+    background-color: rgb(228, 120, 255);
+    padding-bottom: 20px;
+}
 
 header > h1{
-    
+    color: #8CE994;
     text-align: center;
     margin: 0 0 30px 0;
     font-family: 'longhaul', Arial, Helvetica, sans-serif;
