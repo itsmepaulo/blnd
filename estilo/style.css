@@ -18,7 +18,7 @@ header{
     padding-bottom: 20px;
 }
 
-header > h1{
+header > h1{/**Titulo de BLND**/
     color: #8CE994;
     text-align: center;
     margin: 0 0 30px 0;
@@ -26,7 +26,7 @@ header > h1{
     font-size: 60px;
 }
 
-header > nav{
+header > nav{               /**Heade com os links, centralizei eles.**/
     font-weight: bold;
     text-align: center;
     
@@ -67,4 +67,43 @@ header > nav{
     -moz-opacity: 0.5;
 	opacity: 0.5 ;-moz-opacity: 0.5;
 	transition: 1s;
+}
+
+
+#fundonost{
+    max-width: 900px;
+    background-color: #4e0000;
+}
+
+#container > article > h1{
+    text-align: center;
+    
+}
+#container{
+    background-color: black;
+    position: relative;
+    min-width: 400px ;
+    max-width: 700px;
+    margin: auto;
+    padding: 0px 5px 10px 5px;
+    background-image: url(../imagens/nostalgiaultra.jpg);
+    margin-top: 10px;
+    border-radius: 12px;
+    background-size: cover;
+    background-repeat: repeat;
+    
+    
+}
+
+.conteudontu{
+    
+    text-indent: 10px;
+    word-spacing: 3px;
+    min-width: 400px;
+    color: rgba(255, 255, 255, 0.795);
+    margin: auto;
+    padding: 10px;
+}
+.conteudontu > p{
+    line-height: 23px;
 }
