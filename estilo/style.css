@@ -1,5 +1,9 @@
+@charset "UTF-8";
+
 *{
     margin: 0;
+    padding: 0;
+
 }
 @font-face{
     font-family: 'longhaul';
@@ -7,103 +11,26 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
+
+:root{
+    --fonte1:'longhaul';
+    --rosa:rgb(228,120,255);
+    --verde: #8CE994;
+}
+
+html, body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #8CE994;
+    
 }
 
 header{
-    background-color: rgb(228, 120, 255);
-    padding-bottom: 20px;
+    background-color:var(--rosa);
+
 }
 
-header > h1{/**Titulo de BLND**/
-    color: #8CE994;
+header > h1{
     text-align: center;
-    margin: 0 0 30px 0;
-    font-family: 'longhaul', Arial, Helvetica, sans-serif;
-    font-size: 60px;
-}
-
-header > nav{               /**Heade com os links, centralizei eles.**/
-    font-weight: bold;
-    text-align: center;
-    
-}
-
-.buttons-menu{
-    text-decoration: none;
-    font-size: 1.3em;
-    margin: 0 10px;
-    text-transform: uppercase;
-}
-
-.buttons-menu:hover{
-    text-decoration: underline;
-    color: #8CE994;
-    transition: 2s;
-}
-
-.img-menu > img{
-    border-radius: 50%;
-    max-height: 250px;
-    max-width: 150px;
-    margin:20px 20px ;
-}
-
-.img-menu{
-    text-decoration: none;
-    
-    
-}
-.img-menu > p{
-    margin: -20px 0 0 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.frank:hover    {
-    -moz-opacity: 0.5;
-	opacity: 0.5 ;-moz-opacity: 0.5;
-	transition: 1s;
-}
-
-
-#fundonost{
-    max-width: 900px;
-    background-color: #4e0000;
-}
-
-#container > article > h1{
-    text-align: center;
-    
-}
-#container{
-    background-color: black;
-    position: relative;
-    min-width: 400px ;
-    max-width: 700px;
-    margin: auto;
-    padding: 0px 5px 10px 5px;
-    background-image: url(../imagens/nostalgiaultra.jpg);
-    margin-top: 10px;
-    border-radius: 12px;
-    background-size: cover;
-    background-repeat: repeat;
-    
-    
-}
-
-.conteudontu{
-    
-    text-indent: 10px;
-    word-spacing: 3px;
-    min-width: 400px;
-    color: rgba(255, 255, 255, 0.795);
-    margin: auto;
-    padding: 10px;
-}
-.conteudontu > p{
-    line-height: 23px;
+    font-family:var(--fonte1);
+    font-size: 6.5vw;
+    color: var(--verde);
 }
