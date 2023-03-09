@@ -20,7 +20,7 @@
 
 html, body{
     font-family: Arial, Helvetica, sans-serif;
-    
+    min-height: 100vh;
 }
 
 header{
@@ -31,6 +31,47 @@ header{
 header > h1{
     text-align: center;
     font-family:var(--fonte1);
-    font-size: 6.5vw;
+    font-size: 100px;
     color: var(--verde);
+    font-variant: small-caps;
 }
+
+header > nav{
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > nav > a{
+    padding-left: 20px;
+    font-family: var(--fonte1);
+    color: rgb(39, 39, 167);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+header > nav > a:hover{
+    color: #8CE994;
+    transition: 2s;
+}
+
+.imgs{ /**Configuração geral das imagens do menu**/
+    display: inline-block;
+   
+}
+
+.img-menu{
+    padding-left: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.img-menu:hover{
+    color: var(--verde);
+    transition: 2s;
+    
+}
+.frank, .tyler{ /**imagem do frank ocean**/
+    border-radius: 100%;
+    width: 15vw;
+}
+
