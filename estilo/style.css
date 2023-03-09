@@ -50,28 +50,42 @@ header > nav > a{
 }
 
 header > nav > a:hover{
-    color: #8CE994;
-    transition: 2s;
+    color: var(--verde);
+    transition: 1s;
 }
 
 .imgs{ /**Configuração geral das imagens do menu**/
     display: inline-block;
-   
+    text-decoration: none;
+    padding-left: 20px;
 }
+
+.imgs > p {
+    font-family: var(--fonte1);
+    font-size: 0.8em;
+    text-align: center;
+    padding-bottom: 12px;
+    margin-top: 12px;
+}
+
 
 .img-menu{
     padding-left: 20px;
     text-decoration: none;
     display: inline-block;
+
 }
 
-.img-menu:hover{
+.img-menu > a:hover{
     color: var(--verde);
-    transition: 2s;
-    
+    transition: 1s;
 }
+
+
 .frank, .tyler{ /**imagem do frank ocean**/
     border-radius: 100%;
     width: 15vw;
+    padding-top: 20px;
 }
+
 
