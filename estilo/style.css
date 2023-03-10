@@ -62,7 +62,7 @@ header > nav > a:hover{
 
 .imgs > p {
     font-family: var(--fonte1);
-    font-size: 0.8em;
+    font-size: 1.4vw;
     text-align: center;
     padding-bottom: 12px;
     margin-top: 12px;
@@ -82,8 +82,7 @@ header > nav > a:hover{
 }
 
 
-.frank, .tyler{ /**imagem do frank ocean**/
-    border-radius: 100%;
+.frank, .tyler, .post{ /**imagem do frank ocean**/
     width: 15vw;
     padding-top: 20px;
 }
