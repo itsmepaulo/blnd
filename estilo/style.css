@@ -57,12 +57,13 @@ header > nav > a:hover{
 .imgs{ /**Configuração geral das imagens do menu**/
     display: inline-block;
     text-decoration: none;
-    padding-left: 20px;
+    padding-left: 150px;
+    
 }
 
 .imgs > p {
     font-family: var(--fonte1);
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     text-align: center;
     padding-bottom: 12px;
     margin-top: 12px;
@@ -82,9 +83,10 @@ header > nav > a:hover{
 }
 
 
-.frank, .tyler, .post{ /**imagem do frank ocean**/
-    width: 15vw;
+.frank, .tyler, .post{ /**imagens**/
+    width: 17vw;
     padding-top: 20px;
 }
+
 
 
