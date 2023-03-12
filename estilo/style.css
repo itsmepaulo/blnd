@@ -33,7 +33,8 @@ header > h1{
     font-family:var(--fonte1);
     font-size: 100px;
     color: var(--verde);
-    font-variant: small-caps;
+    text-transform: uppercase;
+    padding-top: 10px;
 }
 
 header > nav{
@@ -73,7 +74,6 @@ header > nav > a:hover{
 
 .imgs > p {
     font-family: var(--fonte1);
-    
     text-align: center;
     padding-bottom: 12px;
     margin-top: 12px;
