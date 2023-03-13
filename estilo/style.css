@@ -90,7 +90,7 @@ header > nav > a:hover{
 
 article{
     
-    max-width: 900px;
+    max-width: 500px;
     background-color: rgba(0, 0, 0, 0.075);
     margin: auto;
     padding: 10px;
