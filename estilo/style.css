@@ -15,7 +15,7 @@
 :root{
     --fonte1:'longhaul';
     --rosa:rgb(228, 120, 255);
-    --verde: #8CE994;
+    --verde: #8ce994;
 }
 
 html, body{
@@ -91,7 +91,7 @@ header > nav > a:hover{
 }
 
 article{
-    min-width: 400px;
+    min-width: 300px;
     max-width: 500px;
     background-color: #8ce99452;
     margin: auto;
