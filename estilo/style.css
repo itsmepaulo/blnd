@@ -125,6 +125,21 @@ article{
     
 }
 
+.cont > p > a{
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.cont > p > a:hover{
+    color: #8CE994;
+    transition: 1s;
+    background-color: var(--rosa);
+    border-radius: 2px;
+    
+}
+
+
 .video{
     text-align: center;
     margin-top: 20px;
