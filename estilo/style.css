@@ -91,6 +91,7 @@ header > nav > a:hover{
 }
 
 article{
+    min-width: 400px;
     max-width: 500px;
     background-color: #8ce99452;
     margin: auto;
@@ -100,31 +101,34 @@ article{
     border-radius: 10px;
 }
 
-.frankcont{
+.cont{
     margin-top: 5px;
     background-color: #e478ff60;
     padding: 5px;
     border-radius: 15px;
 }
 
-.frankcont h2{
+.cont h2{
     text-align: center;
     color: navy;
     font-family: var(--fonte1), Arial, Helvetica, sans-serif;
 }
 
-.frankcont h3{
+.cont h3{
     margin-top: 10px;
     text-align: center;
     
 }
 
-.frankcont p{
+.cont p{
     text-indent: 10px;
     
 }
 
-
+.video{
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 footer{
