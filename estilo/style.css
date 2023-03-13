@@ -23,6 +23,10 @@ html, body{
     min-height: 100vh;
 }
 
+main{
+    background-color: #8ce99452;
+}
+
 header{
     background-color:var(--rosa);
 
@@ -79,13 +83,21 @@ header > nav > a:hover{
     margin-top: 12px;
 }
 
-
-
-
 .frank, .tyler, .post{ /**imagens**/
     width: 17vw;
     padding-top: 20px;
 }
+
+article{
+    min-width: 400px;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.075);
+    margin: auto;
+    padding: 10px;
+}
+
+
+
 
 
 
