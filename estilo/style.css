@@ -91,10 +91,10 @@ header > nav > a:hover{
 }
 
 article{
-    max-width: 500px;
+    max-width: 600px;
     background-color: #8ce99452;
     margin: auto;
-    padding: 2px;
+    padding: 4px;
     line-height: 25px;
     margin-top: 10px;
     border-radius: 10px;
@@ -103,7 +103,7 @@ article{
 .cont{
     margin-top: 5px;
     background-color: #e478ff60;
-    padding: 3px;
+    padding: 30px;
     border-radius: 15px;
 }
 
