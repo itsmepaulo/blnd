@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*  #8ce994 verde
+	#e478ff rosa
+	#8ce99452 verde escuro */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'longhaul';
+    src: url(fonts/Longhaul.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html{
+    background-color: #8be99352;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /*Centralizar conteúdo */
+    background-color: #e478ff;
+    width: 250px;
+    height: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    background: #8be99352 url(../imagens/logo2.jpg) no-repeat;
+    background-position: center;
+    height: 200px;
+    background-size: cover;
+    display: block;
+}
+
+section#login > div#formulario{
+    padding: 10px;
+    display: block;
+}
+
+#formulario > h1{
+    font-family: longhaul;
+    color: #8ce994;
+}
+
+div#formulario > form > label{
+    display: block;
+}
