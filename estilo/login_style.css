@@ -79,20 +79,35 @@ div#formulario > form > label{
 .campo{
     font-size: 0.8em;
     margin: 5px 0 10px 0;    
-
+    padding: 5px 0 0 0;
+    border: 2px solid #8ce994;
+    border-radius: 3px;
 }
-.campo > input[type=email]{
-    width: 120px;
+
+.campo > span{
     
+    color: #8ce994;
+    font-weight: bolder;
+    font-size:2em ;
+    width: 40px ;
+    padding: 5px;
 }
 
-.campo > input[type=password]{
-    width: 120px;
+.campo > input{
+    width: calc(100% - 50px);
+    transform: translateY(-10px);
+    font-size: 1em;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+
 }
 
 .campo > label{
     display: none;
 }
+
+
 
 form > input[type=submit]{
     display: block;
