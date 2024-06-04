@@ -18,23 +18,21 @@
     --verde: #8ce994;
 }
 
-html, body{
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    
-}
+
 
 main{
     background-color: #8be99352;
     padding-top:10px ;
 }
 
+/* CABEÇALHO */
+
 header{
     background-color:var(--rosa);
     
 }
 
-header > h1{
+.cabecalho__titulo{
     text-align: center;
     font-family:var(--fonte1);
     font-size: 100px;
@@ -43,12 +41,14 @@ header > h1{
     padding-top: 10px;
 }
 
-header > nav{
+
+
+.cabecalho__nav{
     text-align: center;
     padding-top: 20px;
 }
 
-header > nav > a{
+.cabecalho__menu--item{
     padding-left: 20px;
     font-family: var(--fonte1);
     color: rgb(39, 39, 167);
@@ -56,37 +56,67 @@ header > nav > a{
     text-decoration: none;
 }
 
-header > nav > a:hover{
+.cabecalho__menu--item:hover{
     color: var(--verde);
     transition: 1s;
 }
 
-.img-menu{  /* Centralização das imagens*/
+/* IMAGENS DE ARTISTAS */
+
+.cabecalho__menu{
+    overflow-x: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3d23448f;
+    border-radius: 10px;
+  }
+
+.container__artistas{  /* Centralização das imagens*/
+    display: flex;
+    gap: 20px;
     text-align: center;
     text-decoration: none;
+    align-items: center;
+    white-space: nowrap;
 }
 
-.img-menu > a:hover{
+.container__artistas> a:hover{
     color: var(--verde);
     transition: 1s;
 }
 
-.imgs{ /*Configuração geral das imagens do menu*/
-    display: inline-block;
-    text-decoration: none;
-    padding-left: 4px;
+.container__links:nth-child(1){ 
+    margin-left: 15px;
     
 }
 
-.imgs > p {
+.container__links{
+    text-decoration: none;
+
+}
+
+.descricao__artista{
     font-family: var(--fonte1);
     text-align: center;
     padding-bottom: 12px;
     margin-top: 12px;
 }
 
-.frank, .tyler, .post{ /**imagens**/
-    width: 17vw;
+.container__imagens{ /**imagens**/
+    width: 10vw;
     padding-top: 20px;
 }
 
@@ -162,5 +192,12 @@ footer >p > a{
 footer > p >a:hover{
     color: var(--verde);
     transition: 1s;
+
+}
+
+@media screen and (max-width: 768px){
+    .descricao__artista{
+        display: none;
+    }
 
 }
