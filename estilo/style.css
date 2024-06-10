@@ -120,32 +120,46 @@ header{
     padding-top: 20px;
 }
 
+/* CORPO */
+
 article{
-    max-width: 600px;
-    background-color: #8ce99452;
+    max-width: 90vw;
+    /* background-color: #8ce99452; */
+    background-color: #e478ff60;
     margin: auto;
     padding: 4px;
     line-height: 25px;
     margin-top: 10px;
     border-radius: 10px;
 }
+.container__cont{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}   
 
-.cont{
-    margin-top: 5px;
-    background-color: #e478ff60;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-.cont h2{
+.titulo__cont{
     text-align: center;
     color: navy;
     font-family: var(--fonte1), Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 25px;
 }
 
-.cont h3{
-    margin-top: 10px;
+.container__subtitulo{
     text-align: center;
+    color: navy;
+    font-family: var(--fonte1), Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    
+
+}
+
+
+
+.cont{
+    margin-top: 5px;
+    padding: 30px;
     
 }
 
@@ -169,10 +183,11 @@ article{
 }
 
 
-.video{
+.container__video{
     text-align: center;
-    margin-top: 20px;
+    
 }
+
 
 
 footer{
@@ -196,8 +211,22 @@ footer > p >a:hover{
 }
 
 @media screen and (max-width: 768px){
+    .container__cont{
+        display: block;
+
+    }
+   
     .descricao__artista{
         display: none;
+    }
+
+    .container__imagens{
+        width: 15vw;
+    }
+
+    .video--item{
+        width: 300px;
+
     }
 
 }
