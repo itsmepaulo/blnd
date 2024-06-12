@@ -42,6 +42,11 @@ main{
   
 }
 
+.icon:hover{
+    color: navy;
+    transition: 1s;
+}
+
 .container{
     width: 300px;
     height: 500px;
