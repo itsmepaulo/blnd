@@ -1,0 +1,170 @@
+@charset "UTF-8";
+:root{
+    --fonte1:'longhaul', sans-serif;
+    --rosa:#e478ff;
+    --verde: #8ce994;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'longhaul';
+    src: url(fonts/Longhaul.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html{
+    background-color: #8be99352;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.icon{
+    font-weight: 800;
+    font-size: 3rem;
+    color: #e478ff;
+}
+
+.icon-back{
+    font-weight: 800;
+  
+}
+
+.container{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    background-color: #e478ff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    border-radius: 5px;
+}
+
+.container > div#imagem{
+    background: #8be99352 url(../imagens/logo2.jpg) no-repeat;
+    background-position: center;
+    height: 200px;
+    background-size: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.container__titulo{
+    font-family: longhaul;
+    color: #8ce994;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+}
+
+.container__texto{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.form{
+    padding: 5px 5px 0 5px;
+    
+}
+
+.campo{
+    font-size: 0.8em;
+    margin: 5px 0 10px 0;    
+    padding: 5px 5px 0 5px;
+    border: 2px solid #8ce994;
+    border-radius: 3px;
+}
+
+.campo > input{
+    width: calc(100% - 50px);
+    transform: translateY(-2px);
+    font-size: 1em;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+}
+
+.campo > label{
+    font-family: var(--fonte1);
+    color: navy;
+}
+
+.botao__cadastro{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #8ce994;
+    color: #e478ff;
+    cursor: pointer;
+    font-family: 'longhaul';
+    border-radius: 5px;
+    border: none;
+
+}
+
+@media screen and (min-width: 768px) and (max-width:992px){
+	/*tablet*/
+    section#login{
+        width: 80%;
+        
+    }
+
+    section#login > div#imagem{
+        float: right;
+        width: 40%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: left;
+        width: 60%;
+
+    }
+
+}
+
+@media screen and (min-width:992px){
+	/*desktop*/
+    .container{
+        width: 990px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+   
+    .container > div#imagem{
+        width: 50%;
+        height: 100%;
+    }
+
+    .form{
+        width: 50%;
+    }
+
+    .container__texto{
+        font-size: 1.2rem;
+    }
+    .campo{
+        font-size: 1.2rem;
+    }
+
+    .botao__cadastro{
+        font-size: 1.2rem;
+    }
+
+}
+
+

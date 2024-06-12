@@ -13,7 +13,7 @@
 }
 
 :root{
-    --fonte1:'longhaul';
+    --fonte1:'longhaul', sans-serif;
     --rosa:#e478ff;
     --verde: #8ce994;
 }

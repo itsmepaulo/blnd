@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilo/cadastro_style.css">
+    <link rel="shortcut icon" href="imagens/BLND.ico" type="image/x-icon">
+    <title>Login</title>
+    <style>
+        @font-face {
+            font-family: 'longhaul';
+            src: url(fonts/Longhaul.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <a href="index.html" class="icon-back">
+            <span class="material-symbols-sharp icon">
+                arrow_back
+            </span>
+        </a>
+        <!-- área de cadastro  !-->
+        <section class="container">
+            <div id="imagem">
+                <!-- Está no CSS-->
+            </div>
+            
+            <form action="login.php" method="post" autocomplete="on" class="form">
+                <h1 class="container__titulo">Cadastro</h1>
+                <p class="container__texto">Seja bem vindo(a) ao BLND. Realize um cadastro para criar uma conta.</p>
+                <div class="campo">
+                    <label for="iname">Nome</label>
+                    <input type="text" name="name" id="iname" placeholder="Digite seu nome" autocomplete="name"
+                        required>
+                </div>
+                <div class="campo">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="user" id="iuser" placeholder="Digite seu e-mail" autocomplete="email"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="isenha">Senha</label>
+                    <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" required>
+                </div>
+
+                <input type="submit" value="Cadastrar" class="botao__cadastro">
+            </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
