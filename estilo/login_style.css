@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
-/*  #8ce994 verde
-	#e478ff rosa
-	#8ce99452 verde escuro */
+:root{
+    --fonte1:'longhaul', sans-serif;
+    --rosa:#e478ff;
+    --verde: #8ce994;
+}
+
 
 *{
     padding: 0px;
@@ -35,10 +38,16 @@ main{
     color: #e478ff;
 }
 
+.icon:hover{
+    color: navy;
+    transition: 1s;
+}
+
 .icon-back{
     font-weight: 800;
-  
+    
 }
+
 
 section#login{
     position: absolute;
@@ -123,7 +132,7 @@ form > input[type=submit]{
     display: block;
     font-size: 1em;
     width: 100%;
-    height: 40px;
+    padding: 15px 0 15px 0;
     background-color: #8ce994;
     color: #e478ff;
     cursor: pointer;
@@ -137,22 +146,22 @@ form > input[type=submit]:hover{
     transition: 1s;
 }
 
-form > a.botao{
-    font-family: 'longhaul';
-    color: #b25fc7;
+
+.botao{
     display: block;
+    color: #b25fc7;
+    background-color:#8ce994;
     text-align: center;
-    width: 100%;
-    height: 40px;
-    font-size: 1em;
-    background-color: #78c77e;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
     margin-top: 5px;
+    padding: 15px 0 15px 0;
+    text-decoration: none;
+    font-family: var(--fonte1);
+    border-radius: 5px;
 }
 
-form > a.botao:hover{
+
+
+.botao:hover{
     color: rgb(39, 39, 167);
     transition: 1s;
 }
