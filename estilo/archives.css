@@ -19,6 +19,7 @@
 }
 
 body{
+    box-sizing: border-box;
     display: grid;
     grid-template-areas: 
     "header header header"
@@ -26,6 +27,7 @@ body{
     "footer footer footer"
     ;
     grid-template-columns: auto 1fr;     /* o auto define a largura já definida na classe */
+    
 }
 
 /* CABEÇALHO */
@@ -37,7 +39,7 @@ header.cabecalho{
     align-items: center;
     justify-content: space-around;
     gap: 30px;
-    
+    width: 100vw;
 }
 
 
@@ -52,7 +54,6 @@ header.cabecalho{
 
 .cabecalho__nav{
     text-align: center;
-    padding-bottom: 10px;
     white-space: nowrap;
 }
 
@@ -113,7 +114,7 @@ aside.menu-lateral{
     padding-top: 20px;
 }
 
-
+/* MAIN */
 
 main.container_principal{
     grid-area: main;
@@ -123,7 +124,33 @@ main.container_principal{
 
 .container__titulo{
     text-align: center;
+    margin-top: 5px;
+    font-family: var(--fonte1);
+    color: navy;
+}
 
+.container__secao{
+    
+
+}
+
+.container__secao--div{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.container__secao--img{
+    width: 20vw;
+    padding-top: 20px;
+
+}
+
+.container__secao--img:nth-child(1){
+    margin-left: 15px;
 }
 
 footer.rodape{
