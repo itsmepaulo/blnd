@@ -166,6 +166,28 @@ form > input[type=submit]:hover{
     transition: 1s;
 }
 
+/* FOOTER */
+footer{
+    background-color: var(--rosa);
+    color: var(--verde);
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px;
+    word-spacing: 2px;
+}
+
+footer >p > a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer > p >a:hover{
+    color: var(--verde);
+    transition: 1s;
+
+}
+
+
 @media screen and (min-width: 768px) and (max-width:992px){
 	/*tablet*/
     section#login{

@@ -165,6 +165,10 @@ main.container_principal {
     padding: 20px;
 }
 
+.container__secao:nth-child(11){
+    margin-bottom: 20px;
+}
+
 /* width */
 .container__secao--div::-webkit-scrollbar {
     width: 10px;
@@ -200,5 +204,25 @@ main.container_principal {
 
 footer.rodape {
     grid-area: footer;
+
+}
+
+.rodape{
+    background-color: var(--rosa);
+    color: var(--verde);
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px;
+    word-spacing: 2px;
+}
+
+.rodape >p > a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.rodape > p >a:hover{
+    color: var(--verde);
+    transition: 1s;
 
 }
