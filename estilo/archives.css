@@ -168,10 +168,34 @@ main.container_principal {
     margin-left: 150px
 }
 
+.container__cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container__secao--titulo {
     font-family: var(--fonte1);
     text-align: center;
     font-size: 2rem;
+    padding-left: 23px;
+    color: navy;
+}
+
+.icon{
+    font-weight: 800;
+    font-size: 3rem;
+    color: navy;
+}
+
+.icon:hover{
+    color: var(--verde);
+    transition: 1s;
+}
+
+.icon-forward{
+    font-weight: 800;
+    
 }
 
 .container__secao--div {
@@ -215,7 +239,7 @@ main.container_principal {
     width: 30vw;
     padding-top: 20px;
     margin-bottom: 5px;
-    height: 40vh;
+    height: 50vh;
 }
 
 .container__secao--img--caption{
