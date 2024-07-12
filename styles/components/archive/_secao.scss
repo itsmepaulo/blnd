@@ -24,7 +24,8 @@ main.container_principal {
         background-color: #e478ff9f;
         border-radius: 5px;
         padding: 20px;
-        margin: auto;
+        margin:auto;
+        
 
         .container__cabecalho {
             display: flex;
@@ -71,8 +72,8 @@ main.container_principal {
                 height: 100%;
                 padding-top: 20px;
                 margin-bottom: 5px;
-                object-fit: cover;
-                
+                object-fit: fill;
+                border-radius: 50px;
             }
 
             .container__secao--img--caption {

@@ -181,8 +181,9 @@ main.container_principal .container__secao .container__secao--div .container__se
   height: 100%;
   padding-top: 20px;
   margin-bottom: 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 50px;
 }
 main.container_principal .container__secao .container__secao--div .container__secao--img--caption {
   font-size: 1rem;

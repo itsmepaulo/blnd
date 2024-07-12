@@ -125,8 +125,8 @@ article .titulo__cont {
   text-align: center;
 }
 article .container__cont {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: column;
 }
 article .container__cont .cont__secao {
   margin-top: 5px;
@@ -157,12 +157,16 @@ article .container__video {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .container__cont {
-    display: block;
+@media screen and (min-width: 768px) {
+  article .container__cont {
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
-  .video--item {
-    width: 300px;
+  .container__video {
+    text-align: center;
+  }
+  .container__video .video--item {
+    width: 700px;
   }
 }
 .rodape {
