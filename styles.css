@@ -156,6 +156,9 @@ article .container__cont .cont__secao p a:hover {
 article .container__video {
   text-align: center;
 }
+article .container__video .video--item {
+  width: 90%;
+}
 
 @media screen and (min-width: 768px) {
   article .container__cont {
