@@ -1,0 +1,165 @@
+@use '../../../styles/abstract/mixins';
+@use '../../../styles/abstract/variaveis';
+
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    .icon {
+        font-weight: 800;
+        font-size: 3rem;
+        color: #e478ff;
+    }
+
+    .icon-back {
+        font-weight: 800;
+
+    }
+
+    .icon:hover {
+        color: navy;
+        transition: 1s;
+    }
+
+    .container {
+        width: 300px;
+        margin: auto;
+        background-color: #e478ff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+        border-radius: 5px;
+        transition: width 0.3s, height 0.3s;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 10px;
+
+
+        .form {
+            padding: 5px 5px 0 5px;
+
+            .container__titulo {
+                @include mixins.ff-fs-cl(var(--fonte1), 2rem, var(--verde));
+                text-align: center;
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+
+            }
+
+            .container__texto {
+                font-size: 0.8em;
+                
+            }
+
+            .campo {
+                font-size: 0.8em;
+                margin: 5px 0 10px 0;
+                padding: 5px 5px 0 5px;
+                border: 2px solid #8ce994;
+                border-radius: 3px;
+
+                input {
+                    width: calc(100% - 50px);
+                    transform: translateY(-2px);
+                    font-size: 1em;
+                    height: 30px;
+                    border: none;
+                    border-radius: 3px;
+                }
+
+                label {
+                    font-family: var(--fonte1);
+                    color: navy;
+                }
+            }
+
+            .botao__cadastro {
+                @include mixins.ff-fs-cl(var(--fonte1), 1rem, var(--rosa));
+                display: block;
+                width: 100%;
+                height: 40px;
+                background-color: #8ce994;
+                cursor: pointer;
+                border-radius: 5px;
+                border: none;
+
+            }
+        }
+    }
+
+
+    .container__img {
+        width: 300px;
+        text-align: center;
+        display: flex;
+
+        img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+    
+            object-fit: cover;
+    
+        }
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    main {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+
+
+        .container {
+            width: 990px;
+            display: flex;
+            flex-direction: row-reverse;
+
+
+            .form {
+                padding: 5px 5px 0 5px;
+                width: 50%;
+
+                .container__texto {
+                    font-size: 1.2rem;
+                }
+
+                .campo {
+                    font-size: 1.2rem;
+
+                    input {
+                        width: 100%;
+                    }
+
+                    label {
+                        font-family: var(--fonte1);
+                        color: navy;
+                    }
+                }
+
+                .botao__cadastro {
+                    font-size: 1.2rem;
+
+                }
+            }
+        }
+
+
+        .container__img {
+            width: 495px;
+            height: 363px;
+
+            img {
+                width: 100%;
+                height: 373px;
+                object-fit: cover;
+                border-radius: 6px 0 0 6px;
+    
+            }
+        }
+
+
+    }
+   
+}

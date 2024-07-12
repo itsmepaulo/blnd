@@ -1,0 +1,55 @@
+@use '../../abstract/archive_body';
+@use '../../abstract/mixins';
+@use '../../abstract/variaveis';
+
+header.cabecalho {
+    grid-area: header;
+    background-color: var(--rosa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .cabecalho__titulo {
+        @include mixins.ff-fs-cl(var(--fonte1), 4rem, var(--verde));
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+
+    .cabecalho__nav {
+        display: flex;
+        white-space: nowrap;
+        padding: 0 0 10px 20px;
+
+        .cabecalho__nav--item {
+            padding-left: 20px;
+            @include mixins.ff-fs-cl(var(--fonte1), 1rem, var(--azul));
+            text-decoration: none;
+
+        }
+        .cabecalho__nav--item:hover {
+            color: var(--verde);
+            transition: 1s;
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    /* CABEÇALHO */
+
+    header.cabecalho {
+        gap: 30px;
+        
+        .cabecalho__nav {
+          
+            .cabecalho__nav--item {
+                font-size: 1.5rem;
+    
+            }
+            
+        }
+    }
+
+}

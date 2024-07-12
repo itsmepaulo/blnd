@@ -1,0 +1,73 @@
+@use '../../abstract/variaveis';
+@use '../../abstract/mixins';
+
+article {
+    max-width: 90vw;
+    /* background-color: #8ce99452; */
+    background-color: #e478ff60;
+    margin: auto;
+    padding: 4px;
+    line-height: 25px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    .titulo__cont {
+        @include mixins.ff-fs-cl(var(--fonte1), 2rem, var(--azul));
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .container__cont {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .cont__secao {
+            margin-top: 5px;
+            padding: 30px;
+
+            .container__subtitulo {
+                @include mixins.ff-fs-cl(var(--fonte1), 1.5rem, var(--azul));
+                margin-top: 25px;
+                text-align: center;
+            }
+
+            p {
+                text-indent: 10px;
+
+                a {
+                    text-decoration: none;
+                    font-weight: bolder;
+                    padding: 2px;
+                }
+
+                a:hover {
+                    color: #8CE994;
+                    transition: 1s;
+                    background-color: var(--rosa);
+                    border-radius: 2px;
+
+                }
+
+            }
+        }
+    }
+
+    .container__video {
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container__cont {
+        display: block;
+
+    }
+
+    .video--item {
+        width: 300px;
+
+    }
+
+}

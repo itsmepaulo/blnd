@@ -39,9 +39,9 @@ header.cabecalho {
     grid-area: header;
     background-color: var(--rosa);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 30px;
 
 }
 
@@ -56,17 +56,18 @@ header.cabecalho {
 }
 
 .cabecalho__nav {
-    text-align: center;
+    display: flex;
     white-space: nowrap;
+    padding: 0 0 10px 20px;
 }
 
 .cabecalho__menu--item {
     padding-left: 20px;
     font-family: var(--fonte1);
     color: rgb(39, 39, 167);
-    font-size: 1.5em;
+    font-size: 1rem;
     text-decoration: none;
-
+    
 }
 
 .cabecalho__menu--item:hover {
@@ -84,31 +85,11 @@ aside.menu-lateral {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 100%;
+    height: 100vh;
     position: fixed;
-    overflow-y: scroll;
-    direction: rtl;
+
 }
 
-/* width */
-aside.menu-lateral::-webkit-scrollbar {
-    width: 10px;
-    
-}
-
-/* Track */
-aside.menu-lateral::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-    
-}
-
-/* Handle */
-aside.menu-lateral::-webkit-scrollbar-thumb {
-    background: #3d23448f;
-    border-radius: 10px;
-    
-}
 
 .container__artistas {
     /* Centralização das imagens*/
@@ -120,6 +101,7 @@ aside.menu-lateral::-webkit-scrollbar-thumb {
     font-size: 0.5rem;
     display: flex;
     flex-direction: column;
+    
 }
 
 .container__artistas>a:hover {
@@ -139,9 +121,10 @@ aside.menu-lateral::-webkit-scrollbar-thumb {
     /**imagens**/
     width: 8.5vw;
     padding-top: 20px;
+    object-fit: cover;
 }
 
-/* MAIN */
+/* Secao */
 
 main.container_principal {
     grid-area: main;
@@ -150,6 +133,7 @@ main.container_principal {
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    text-align: center;
 }
 
 .container__titulo {
@@ -161,11 +145,13 @@ main.container_principal {
 }
 
 .container__secao {
-    width: 80%;
+    text-align: center;
+    width: 50vw;
     background-color: #e478ff9f;
     border-radius: 5px;
     padding: 20px;
-    margin-left: 150px
+    margin: auto;
+    
 }
 
 .container__cabecalho{
@@ -200,46 +186,24 @@ main.container_principal {
 
 .container__secao--div {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     text-align: center;
     text-decoration: none;
     align-items: center;
     flex-wrap: nowrap;
     overflow: hidden;
-    /* overflow: hidden;  esse comando faz as imagens não ultrapassarem a div,*/
-    overflow-x: scroll;
     padding: 20px;
 }
 
-.container__secao:nth-child(11){
-    margin-bottom: 20px;
-}
 
-/* width */
-.container__secao--div::-webkit-scrollbar {
-    width: 10px;
-    
-}
-
-/* Track */
-.container__secao--div::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-    
-}
-
-/* Handle */
-.container__secao--div::-webkit-scrollbar-thumb {
-    background: #3d23448f;
-    border-radius: 10px;
-    
-}
 
 .container__secao--img {
-    width: 30vw;
+    width: 100%;
+    height: 100%;
     padding-top: 20px;
     margin-bottom: 5px;
-    height: 50vh;
+    object-fit: cover;
 }
 
 .container__secao--img--caption{
@@ -248,6 +212,8 @@ main.container_principal {
     font-weight: bold;
 }
 
+
+/*RODAPÉ*/
 footer.rodape {
     grid-area: footer;
 
@@ -271,4 +237,96 @@ footer.rodape {
     color: var(--verde);
     transition: 1s;
 
+}
+
+@media screen and (min-width:992px){
+
+    /* CABEÇALHO */
+    
+    header.cabecalho {
+        gap: 30px;
+    
+    }
+    
+    
+    .cabecalho__menu--item {
+        font-size: 1.5em;
+
+    }
+    
+    /* MENU LATERAL */
+    
+    aside.menu-lateral {
+        height: 100%;
+        position: fixed;
+        overflow-y: scroll;
+        direction: rtl;
+    }
+    
+    /* width */
+    aside.menu-lateral::-webkit-scrollbar {
+        width: 10px;
+        
+    }
+    
+    /* Track */
+    aside.menu-lateral::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+        
+    }
+    
+    /* Handle */
+    aside.menu-lateral::-webkit-scrollbar-thumb {
+        background: #3d23448f;
+        border-radius: 10px;
+        
+    }
+    
+    /* MAIN */
+    .container__secao {
+        transition: 1s;
+        width: 80%;
+        margin-left: 200px;
+    }
+
+    .container__secao--div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        /* overflow: hidden;  esse comando faz as imagens não ultrapassarem a div,*/
+        overflow-x: scroll;
+        padding: 20px;
+    }
+    
+    .container__secao:nth-child(11){
+        margin-bottom: 20px;
+    }
+    
+    /* width */
+    .container__secao--div::-webkit-scrollbar {
+        width: 10px;
+        
+    }
+    
+    /* Track */
+    .container__secao--div::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+        
+    }
+    
+    /* Handle */
+    .container__secao--div::-webkit-scrollbar-thumb {
+        background: #3d23448f;
+        border-radius: 10px;
+        
+    }
+    
+    .container__secao--img {
+        width: 30vw;
+        height: 50vh;
+    }
+     
 }

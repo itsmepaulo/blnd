@@ -1,0 +1,106 @@
+@use '../../abstract/mixins';
+@use '../../abstract/variaveis';
+
+
+main {
+    background-color: #8be99352;
+
+}
+
+header {
+    background-color: var(--rosa);
+
+    h1.cabecalho__titulo {
+        @include mixins.ff-fs-cl(var(--fonte1), 6.25rem, var(--verde));
+        text-transform: uppercase;
+        padding-top: 10px;
+        text-align: center;
+
+    }
+
+    nav.cabecalho__nav {
+        text-align: center;
+        padding-top: 20px;
+
+        .cabecalho__menu--item {
+            @include mixins.ff-fs-cl(var(--fonte1), 1.5em, var(--azul));
+            padding-left: 20px;
+            text-decoration: none;
+
+        }
+
+        .cabecalho__menu--item:hover {
+            color: var(--verde);
+            transition: 1s;
+        }
+
+    }
+
+    .cabecalho__menu {
+        overflow-x: scroll;
+
+        .container__artistas {
+            display: flex;
+            gap: 20px;
+            text-align: center;
+            text-decoration: none;
+            align-items: center;
+            white-space: nowrap;
+
+            .container__links:nth-child(1) {
+                margin-left: 15px;
+
+            }
+
+            .container__links {
+                text-decoration: none;
+
+                .container__imagens {
+                    /**imagens**/
+                    width: 10vw;
+                    padding-top: 20px;
+                }
+
+                .descricao__artista {
+                    font-family: var(--fonte1);
+                    text-align: center;
+                    padding-bottom: 12px;
+                    margin-top: 12px;
+                }
+            }
+        }
+
+        .container__artistas>a:hover {
+            color: var(--verde);
+            transition: 1s;
+        }
+
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #3d23448f;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .descricao__artista {
+        display: none;
+    }
+
+    .container__imagens {
+        width: 15vw;
+    }
+}

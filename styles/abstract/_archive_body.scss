@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer"
+    ;
+    grid-template-columns: auto 1fr;
+    
+}
+
+
+@font-face{
+    font-family: 'longhaul';
+    src: url(fonts/Longhaul.ttf);
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,248 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "header header header" "aside main main" "footer footer footer";
+  grid-template-columns: auto 1fr;
+}
+
+@font-face {
+  font-family: "longhaul";
+  src: url(fonts/Longhaul.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --fonte1:"longhaul", sans-serif;
+  --rosa:#e478ff;
+  --verde: #8ce994;
+  --azul:rgb(39, 39, 167);
+}
+
+header.cabecalho {
+  grid-area: header;
+  background-color: var(--rosa);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+header.cabecalho .cabecalho__titulo {
+  font-family: var(--fonte1);
+  font-size: 4rem;
+  color: var(--verde);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+header.cabecalho .cabecalho__nav {
+  display: flex;
+  white-space: nowrap;
+  padding: 0 0 10px 20px;
+}
+header.cabecalho .cabecalho__nav .cabecalho__nav--item {
+  padding-left: 20px;
+  font-family: var(--fonte1);
+  font-size: 1rem;
+  color: var(--azul);
+  text-decoration: none;
+}
+header.cabecalho .cabecalho__nav .cabecalho__nav--item:hover {
+  color: var(--verde);
+  transition: 1s;
+}
+
+@media screen and (min-width: 992px) {
+  /* CABEÇALHO */
+  header.cabecalho {
+    gap: 30px;
+  }
+  header.cabecalho .cabecalho__nav .cabecalho__nav--item {
+    font-size: 1.5rem;
+  }
+}
+aside.menu-lateral {
+  grid-area: aside;
+  padding: 0 1rem;
+  background-color: var(--rosa);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  position: fixed;
+}
+aside.menu-lateral .container__artistas {
+  /* Centralização das imagens*/
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+aside.menu-lateral .container__artistas .container__imagens {
+  /**imagens**/
+  width: 8.5vw;
+  padding-top: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+  aside.menu-lateral {
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    direction: rtl;
+  }
+  /* width */
+  aside.menu-lateral::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  aside.menu-lateral::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  /* Handle */
+  aside.menu-lateral::-webkit-scrollbar-thumb {
+    background: rgba(61, 35, 68, 0.5607843137);
+    border-radius: 10px;
+  }
+}
+main.container_principal {
+  grid-area: main;
+  background-color: rgba(139, 233, 147, 0.3215686275);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+main.container_principal .container__titulo {
+  font-family: var(--fonte1);
+  font-size: 2rem;
+  color: var(--azul);
+  text-align: center;
+  margin-top: 5px;
+}
+main.container_principal .container__secao {
+  text-align: center;
+  width: 50vw;
+  background-color: rgba(228, 120, 255, 0.6235294118);
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+}
+main.container_principal .container__secao .container__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.container_principal .container__secao .container__cabecalho .container__secao--titulo {
+  font-family: var(--fonte1);
+  font-size: 2rem;
+  color: var(--azul);
+  text-align: center;
+  padding-left: 23px;
+}
+main.container_principal .container__secao .container__cabecalho .icon {
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--azul);
+}
+main.container_principal .container__secao .container__cabecalho .icon:hover {
+  color: var(--verde);
+  transition: 1s;
+}
+main.container_principal .container__secao .container__cabecalho .icon-forward {
+  font-weight: 800;
+}
+main.container_principal .container__secao .container__secao--div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding: 20px;
+}
+main.container_principal .container__secao .container__secao--div .container__secao--img {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main.container_principal .container__secao .container__secao--div .container__secao--img--caption {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+  main.container_principal {
+    /* width */
+    /* Track */
+    /* Handle */
+  }
+  main.container_principal .container__secao {
+    transition: 1s;
+    width: 80%;
+    margin-left: 200px;
+  }
+  main.container_principal .container__secao .container__secao--div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    /* overflow: hidden;  esse comando faz as imagens não ultrapassarem a div,*/
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  main.container_principal .container__secao .container__secao--div .container__secao--img {
+    width: 30vw;
+    height: 50vh;
+  }
+  main.container_principal .container__secao:nth-child(11) {
+    margin-bottom: 20px;
+  }
+  main.container_principal .container__secao--div::-webkit-scrollbar {
+    width: 10px;
+  }
+  main.container_principal .container__secao--div::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  main.container_principal .container__secao--div::-webkit-scrollbar-thumb {
+    background: rgba(61, 35, 68, 0.5607843137);
+    border-radius: 10px;
+  }
+}
+footer.rodape {
+  grid-area: footer;
+  background-color: var(--rosa);
+  color: var(--verde);
+  text-align: center;
+  font-weight: bolder;
+  padding: 5px;
+  word-spacing: 2px;
+}
+footer.rodape a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+footer.rodape a:hover {
+  color: var(--verde);
+  transition: 1s;
+}/*# sourceMappingURL=archives_styles.css.map */

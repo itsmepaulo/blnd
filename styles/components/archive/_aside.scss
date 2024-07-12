@@ -1,0 +1,64 @@
+@use '../../abstract/archive_body';
+@use '../../abstract/mixins';
+@use '../../abstract/variaveis';
+
+
+aside.menu-lateral {
+    grid-area: aside;
+    padding: 0 1rem;
+    background-color: var(--rosa);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    position: fixed;
+
+    .container__artistas {
+        /* Centralização das imagens*/
+        text-align: center;
+        text-decoration: none;
+        align-items: center;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        
+        .container__imagens {
+            /**imagens**/
+            width: 8.5vw;
+            padding-top: 20px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (min-width:992px){
+
+    aside.menu-lateral {
+        height: 100%;
+        position: fixed;
+        overflow-y: scroll;
+        direction: rtl;
+    }
+    
+    /* width */
+    aside.menu-lateral::-webkit-scrollbar {
+        width: 10px;
+        
+    }
+    
+    /* Track */
+    aside.menu-lateral::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+        
+    }
+    
+    /* Handle */
+    aside.menu-lateral::-webkit-scrollbar-thumb {
+        background: #3d23448f;
+        border-radius: 10px;
+        
+    }
+}

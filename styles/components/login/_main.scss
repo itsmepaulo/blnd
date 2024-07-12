@@ -1,0 +1,182 @@
+@use '../../abstract/mixins';
+@use '../../abstract/variaveis';
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    .icon {
+        font-weight: 800;
+        font-size: 3rem;
+        color: var(--rosa);
+    }
+
+    .icon:hover {
+        color: var(--azul);
+        transition: 1s;
+    }
+
+    .icon-back {
+        font-weight: 800;
+
+    }
+
+    .login {
+        width: 300px;
+        margin: auto;
+        background-color: #e478ff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+        border-radius: 5px;
+        transition: width 0.3s, height 0.3s;
+        display: flex;
+        flex-direction: column-reverse;
+
+        #formulario {
+            padding: 10px;
+            display: block;
+
+            h1 {
+                @include mixins.ff-fs-cl(var(--fonte1), 2rem, var(--verde));
+                text-align: center;
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 0.8em;
+
+            }
+
+            form {
+
+                .campo {
+                    font-size: 0.8em;
+                    margin: 5px 0 10px 0;
+                    padding: 5px 0 0 0;
+                    border: 2px solid #8ce994;
+                    border-radius: 3px;
+                    white-space: nowrap;
+
+                    span {
+                        text-align: center;
+                        color: #8ce994;
+                        font-weight: bolder;
+                        font-size: 2em;
+                        width: 40px;
+                        padding: 5px;
+                    }
+
+                    input {
+                        width: calc(100% - 50px);
+                        transform: translateY(-10px);
+                        font-size: 1em;
+                        height: 30px;
+                        border: none;
+                        border-radius: 3px;
+                        width: 80%;
+                    }
+
+                    label {
+                        display: none;
+                    }
+                }
+
+                label {
+                    display: block;
+
+                }
+
+                input[type=submit] {
+                    @include mixins.ff-fs-cl(var(--fonte1), 1rem, var(--rosa));
+                    display: block;
+                    width: 100%;
+                    padding: 15px 0 15px 0;
+                    background-color: #8ce994;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    border: none;
+                }
+
+                input[type=submit]:hover {
+                    color: rgb(39, 39, 167);
+                    transition: 1s;
+                }
+
+                .botao {
+                    @include mixins.ff-fs-cl(var(--fonte1), 1rem, var(--rosa));
+                    display: block;
+                    background-color: #8ce994;
+                    text-align: center;
+                    margin-top: 5px;
+                    padding: 15px 0 15px 0;
+                    text-decoration: none;
+                    border-radius: 5px;
+
+                }
+
+                .botao:hover {
+                    color: var(--azul);
+                    transition: 1s;
+                }
+            }
+        }
+
+    }
+
+    .container__img {
+        width: 300px;
+        text-align: center;
+        display: flex;
+
+        img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+            align-self: flex-start;
+
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    main {
+
+        .login {
+            width: 990px;
+            display: flex;
+            flex-direction: row-reverse;
+
+            #formulario {
+                float: left;
+                width: 50%;
+
+
+                p {
+                    font-size: 1.2rem;
+
+                }
+
+                form {
+                    .campo {
+                        font-size: 1.2rem;
+
+                    }
+                }
+
+            }
+
+            .container__img {
+                width: 495px;
+                height: 412px;
+
+                img {
+                    width: 100%;
+                    height: 421px;
+                    object-fit: cover;
+                    border-radius: 6px 0 0 6px;
+                }
+            }
+        }
+    }
+}
